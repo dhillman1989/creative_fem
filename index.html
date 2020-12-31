@@ -24,9 +24,9 @@
         <img src="./assets/desktop/logo.svg" alt="" class="logo" />
       </div>
       <ul class="navigation__list pr-lg">
-        <li class="navigation__link">About</li>
-        <li class="navigation__link">Service</li>
-        <li class="navigation__link">Projects</li>
+        <li class="navigation__link"><a href="#">About</a></li>
+        <li class="navigation__link"><a href="#">Service</a></li>
+        <li class="navigation__link"><a href="#">Projects</a></li>
         <li class="navigation__link navigation__link--button">
           Schedule a call
         </li>
@@ -76,21 +76,23 @@
       <div class="approach__text">
         <ul class="approach__list">
           <li class="approach__list-item">
-            <span>01</span> 
+            <span>01</span>
             <h3>Brand strategy</h3>
             <p>
               Brand strategy is critical for long-term success. Outshining
               competitors and capturing the target audience are key.
             </p>
           </li>
-          <li class="approach__list-item"><span>02</span> 
+          <li class="approach__list-item">
+            <span>02</span>
             <h3>Brand design</h3>
             <p>
               Keeping the brand design unique and meaningful helps in
               communicating the brand’s timeless value effectively.
             </p>
           </li>
-          <li class="approach__list-item"><span>03</span> 
+          <li class="approach__list-item">
+            <span>03</span>
             <h3>Web design</h3>
             <p>
               A beautifully crafted website is the best tool for brand
@@ -100,14 +102,42 @@
         </ul>
       </div>
       <div class="brand-guidelines__title">
-        <div class="tilde"><img src="./assets/desktop/bg-pattern-wavy-white.svg"></div>
-        <h2 class="heading heading--secondary pl-lg">Brand naming & guidelines</h2>
+        <div class="tilde">
+          <img src="./assets/desktop/bg-pattern-wavy-white.svg" />
+        </div>
+        <h2 id="slideshow-title" class="heading heading--secondary pl-lg">
+          Brand naming & guidelines
+        </h2>
         <div class="slideshow-controls pl-lg">
-          <div class="slideshow-controls__left"><img src="./assets/desktop/icon-arrow-previous.svg"></div>
-          <div class="slideshow-controls__right"><img src="./assets/desktop/icon-arrow-next.svg"></div>
+          <div id="control-left" class="slideshow-controls__left">
+            <object
+              type="image/svg+xml"
+              data="./assets/desktop/icon-arrow-previous.svg"
+              class="control"
+            ></object>
+          </div>
+          <div id="control-right" class="slideshow-controls__right">
+            <object
+              type="image/svg+xml"
+              data="./assets/desktop/icon-arrow-next.svg"
+              class="control"
+            ></object>
+          </div>
         </div>
       </div>
-      <img src="./assets/desktop/image-slide-1.jpg" class="brand-guidelines__img"></img>
+      <div class="brand-guidelines__img">
+        <img
+          id="slideshow-img"
+          src="./assets/desktop/image-slide-1.jpg"
+          class="image"
+        />
+        <div class="note">
+          <p id="note-title">Lean Product Roadmap</p>
+          <p id="note-year">2019 Project</p>
+        </div>
+      </div>
     </div>
+
+    <script src="./scripts/slideshow.js"></script>
   </body>
 </html>
