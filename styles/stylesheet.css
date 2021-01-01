@@ -1,9 +1,14 @@
+
 :root{
     --color-red: #f94f4f;
     --color-red-light:#fc7676;
     --color-bg-black: #191921;
     --color-white: #ffffff;
     --color-text-black: #000000;
+
+    --bp-tablet: 768px;
+    --bp-phone: 375px
+
 }
 
 
