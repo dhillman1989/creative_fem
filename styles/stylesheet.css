@@ -148,7 +148,7 @@ body{
 .main-grid{
     display: grid;
     grid-template-columns: repeat(8, 12.5vw);
-    grid-template-rows: repeat(14, 20rem );
+    grid-template-rows: repeat(12, 20rem );
     
 }
 
@@ -207,7 +207,7 @@ a.design__cta:hover{
 
 .approach__title-box{
     grid-column : span 4;
-    grid-row: span 5;
+    grid-row: span 4;
     z-index: 5;
     position: relative;
 }
@@ -223,7 +223,7 @@ a.design__cta:hover{
     transform: scaleX(1.5) scaleY(1.4);
     grid-column : span 4;
     grid-row: span 4;
-    padding: 5rem 25rem 10rem 17rem;
+    padding: 0rem 15rem 0 17rem;
 }
 
 
@@ -237,7 +237,7 @@ a.design__cta:hover{
 }
 
 .approach__text > *{
-    transform: scaleX(0.6666) scaleY(0.75);
+    transform: scaleX(0.6) scaleY(0.66);
 }
 
 .approach__text p{
@@ -345,15 +345,56 @@ a.design__cta:hover{
 }
 
 
-.slideshow-controls .control{
-    width: 4.5rem;
-    height: 4.5rem;
+.slideshow-controls .control {
+    transform-origin: 0 0;
+    transform: scale(1.5);
     cursor: pointer;
 }
 
 object {
     pointer-events: none;
 }
+
+
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    padding-right: 20rem;
+}
+
+.footer .tilde{
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+}
+
+.footer__tagline{
+    width: 50%;
+    
+}
+
+.footer__button{
+    margin-left: auto;
+    font-size: 1.8rem;
+    background-color:var(--color-red);
+    color: var(--color-white)
+}
+
+.footer__button:hover,
+.footer__button:active{
+    background-color:var(--color-red-light);
+}
+
+
+
+
 
 
 
