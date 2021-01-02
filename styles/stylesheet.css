@@ -17,6 +17,7 @@
   padding: 0;
 }
 
+
 a:link,
 a:visited {
   text-decoration: none;
@@ -185,6 +186,7 @@ body {
 .design__text p {
   color: var(--color-white);
   font-size: 1.8rem;
+  line-height: 3.2rem;
   font-weight: 100;
   margin-bottom: 4rem;
 }
@@ -238,7 +240,8 @@ a.design__cta:hover {
 }
 
 .approach__text p {
-  font-size: 1.8rem;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
   font-weight: 500;
   color: var(--color-white);
 }
@@ -317,7 +320,8 @@ a.design__cta:hover {
 }
 
 .brand-guidelines__img .note p {
-  font-size: 2rem;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
 }
 
 .brand-guidelines__img .note p:first-of-type {
@@ -409,7 +413,7 @@ object {
 
 @media only screen and (max-width: 1100px) {
   html {
-    font-size: 50%;
+    font-size: 48%;
   }
 
   .pl-lg {
@@ -456,8 +460,8 @@ object {
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
   html {
-    font-size: 43.5%;
+      font-size: 42%;
   }
 }
