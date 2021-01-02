@@ -9,9 +9,9 @@ console.log("connected");
 
 let slide = 0;
 const slidesData = [
-    {slideTitle: "Brand naming & guidelines", image: "../assets/desktop/image-slide-1.jpg", noteTitle: "Lean Product Roadmap", noteYear: "2019 Project"},
-    {slideTitle: "Brand identity & merchandise", image: "../assets/desktop/image-slide-2.jpg", noteTitle: "New Majestic Hotel", noteYear: "2018 Project"},
-    {slideTitle: "Brand identity & web design", image: "../assets/desktop/image-slide-3.jpg", noteTitle: "Crypto Dashboard", noteYear: "2016 Project"}
+    {slideTitle: "Brand naming & guidelines", image: "./assets/desktop/image-slide-1.jpg", noteTitle: "Lean Product Roadmap", noteYear: "2019 Project"},
+    {slideTitle: "Brand identity & merchandise", image: "./assets/desktop/image-slide-2.jpg", noteTitle: "New Majestic Hotel", noteYear: "2018 Project"},
+    {slideTitle: "Brand identity & web design", image: "./assets/desktop/image-slide-3.jpg", noteTitle: "Crypto Dashboard", noteYear: "2016 Project"}
 ];
 
 const changeSlide = ()=>{
