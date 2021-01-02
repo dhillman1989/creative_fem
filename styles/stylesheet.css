@@ -17,7 +17,6 @@
   padding: 0;
 }
 
-
 a:link,
 a:visited {
   text-decoration: none;
@@ -47,12 +46,12 @@ body {
 }
 
 .heading--primary {
-  font-size: 8rem;
+  font-size: 6rem;
   line-height: 8.8rem;
 }
 
 .heading--secondary {
-  font-size: 5.6rem;
+  font-size: 5rem;
 }
 
 /* TOP NAVIGATION BAR */
@@ -102,13 +101,21 @@ body {
 /* HERO/SPLASH */
 
 .splash {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: 80rem;
-  background-image: url(../assets/desktop/image-hero.jpg);
+  align-items: stretch;
+  height: 70rem;
   background-position: top right;
   background-repeat: no-repeat;
+}
+
+.splash__bg {
+  height: 100%;
+  position: absolute;
+  z-index: -3;
+  top: 0;
+  right: 0;
 }
 
 .splash__text {
@@ -145,6 +152,7 @@ body {
   display: grid;
   grid-template-columns: repeat(8, 12.5vw);
   grid-template-rows: repeat(12, 20rem);
+  grid-auto-rows: minmax(min-content, max-content);
 }
 
 .design__img {
@@ -240,8 +248,8 @@ a.design__cta:hover {
 }
 
 .approach__text p {
-    font-size: 1.8rem;
-    line-height: 3.2rem;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
   font-weight: 500;
   color: var(--color-white);
 }
@@ -320,8 +328,8 @@ a.design__cta:hover {
 }
 
 .brand-guidelines__img .note p {
-    font-size: 1.8rem;
-    line-height: 3.2rem;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
 }
 
 .brand-guidelines__img .note p:first-of-type {
@@ -462,6 +470,68 @@ object {
 
 @media only screen and (max-width: 800px) {
   html {
-      font-size: 42%;
+    font-size: 45%;
+  }
+
+  .navigation__list {
+    display: none;
+  }
+
+  .splash {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .splash__bg{
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: 0;
+      
+  }
+  .splash__text{
+      width: 100%;
+      padding: 10rem 5rem;
+  }
+
+  .splash__btn {
+    font-size: 2.5rem;
+    padding: 3rem 4rem;
+  }
+
+  .approach__title-box{
+      grid-row: span 2;
+      background-color: var(--color-red);
+  }
+
+  .approach__title-box .heading--secondary{
+    color: var(--color-white);
+    margin-top: 10rem;
+    margin-right: 8rem;
+  }
+
+  .approach__text{
+      padding-left: 12rem;
+      padding-right: 8rem;
+  }
+
+  .design__img,
+  .design__text,
+  .approach__title-box,
+  .approach__text,
+  .brand-guidelines__img,
+  .brand-guidelines__title{
+      grid-column: span 8;
+  }
+
+  .design__text{
+      grid-row: span 3;
+      padding:8rem 8rem ;
+  }
+
+  .brand-guidelines__img{
+      grid-row: 19/ span 4;
   }
 }
