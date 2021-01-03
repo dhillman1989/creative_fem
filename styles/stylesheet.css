@@ -432,6 +432,15 @@ object {
     font-size: 48%;
   }
 
+  .navigation__list {
+    width: 60%;
+    justify-content: space-evenly;
+  }
+
+  .navigation__link {
+    margin-left: 0;
+  }
+
   .pl-lg {
     padding-left: 8rem;
   }
@@ -476,7 +485,7 @@ object {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   html {
     font-size: 45%;
   }
