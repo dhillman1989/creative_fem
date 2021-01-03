@@ -408,7 +408,7 @@ object {
 /*helpers for padding and margin*/
 
 .pl-lg {
-  padding-left: 20rem;
+  padding-left: 10rem;
 }
 
 .pr-lg {
@@ -502,7 +502,7 @@ object {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   html {
     font-size: 45%;
   }
