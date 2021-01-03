@@ -454,6 +454,10 @@ object {
   .mt-lg {
     margin-top: 2rem;
   }
+  .heading--primary {
+    font-size: 4.8rem;
+    line-height: 5.2rem;
+  }
 
   .approach__text {
     padding: 2rem 3rem 2rem 5rem;
@@ -476,7 +480,7 @@ object {
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 500px) {
   html {
     font-size: 45%;
   }
