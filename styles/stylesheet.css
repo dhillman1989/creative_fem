@@ -436,7 +436,7 @@ object {
     font-size: 48%;
   }
 
-  . .heading--primary {
+  .heading--primary {
     font-size: 5.4em;
     line-height: 6.4rem;
   }
@@ -528,7 +528,7 @@ object {
 
   .hamburger {
     margin-left: auto;
-    display: inline-block;
+    display: inline;
   }
 
   .navigation__list {
