@@ -5,8 +5,8 @@
   --color-white: #ffffff;
   --color-text-black: #000000;
 
-  --bp-tablet: 1100px;
-  --bp-phone: 600px;
+  --bp-tablet: 768px;
+  --bp-phone: 375px;
 }
 
 *,
@@ -82,12 +82,13 @@ body {
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
   background-color: var(--color-red);
 }
 
 .navigation__link {
+  margin-left: 6rem;
   font-size: 1.5rem;
+  width: 5rem;
   color: var(--color-white);
 }
 
@@ -137,7 +138,6 @@ body {
 .splash p {
   font-size: 1.8rem;
   line-height: 3.2rem;
-  margin: 2rem 0 3rem 0;
 }
 
 .splash__btn {
@@ -160,7 +160,7 @@ body {
   display: grid;
   grid-template-columns: repeat(8, 12.5vw);
   grid-template-rows: repeat(12, 1fr);
-  grid-auto-rows: min-content;
+  grid-auto-rows: auto;
 }
 
 .design__img {
@@ -455,10 +455,6 @@ object {
   .mt-lg {
     margin-top: 2rem;
   }
-  .heading--primary {
-    font-size: 4.8rem;
-    line-height: 5.2rem;
-  }
 
   .approach__text {
     padding: 2rem 3rem 2rem 5rem;
@@ -475,15 +471,19 @@ object {
   }
 
   .design__text {
-    padding-top: 6rem;
     padding-left: 10rem;
     padding-right: 10rem;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   html {
     font-size: 45%;
+  }
+
+  .main-grid {
+    display: flex;
+    flex-direction: column;
   }
 
   .navigation__list {
@@ -514,7 +514,7 @@ object {
   }
 
   .approach__title-box {
-    grid-row: span 2;
+    padding-top: 30rem;
     background-color: var(--color-red);
   }
 
@@ -525,14 +525,15 @@ object {
   }
 
   .approach__text {
-    padding-left: 12rem;
+    padding-top: 10em;
+    padding-left: 15rem;
     padding-right: 8rem;
+    padding-bottom: 5rem;
+    transform: scale(1);
   }
 
-  .brand-guidelines__title {
-    padding-top: 5rem;
-    position: relative;
-    transform: translateY(5rem) scaleX(1.3333);
+  .approach__text > * {
+    transform: scale(1);
   }
 
   .design__img,
@@ -541,24 +542,37 @@ object {
   .approach__text,
   .brand-guidelines__img,
   .brand-guidelines__title {
-    grid-column: span 8;
-  }
-
-  .design__img {
-    grid-row: span 3;
+    grid-column: span 1;
   }
 
   .design__text {
-    grid-row: span 3;
     padding: 8rem 8rem;
   }
 
+  .brand-guidelines__title {
+    padding-right: 5rem;
+  }
+
   .brand-guidelines__img {
-    grid-row: 19 / span 4;
     object-fit: cover;
   }
 
-  .heading--secondary {
-    font-size: 4.4rem;
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__tagline {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .footer .tilde {
+    display: none;
+  }
+
+  .footer__button {
+    margin-left: 0;
+    margin-bottom: 5rem;
   }
 }
