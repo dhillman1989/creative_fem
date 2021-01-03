@@ -536,21 +536,15 @@ object {
     transform: scale(1);
   }
 
-  .design__img,
-  .design__text,
-  .approach__title-box,
-  .approach__text,
-  .brand-guidelines__img,
-  .brand-guidelines__title {
-    grid-column: span 1;
-  }
-
   .design__text {
     padding: 8rem 8rem;
   }
 
   .brand-guidelines__title {
     padding-right: 5rem;
+
+    margin-top: -2px;
+    order: 200;
   }
 
   .brand-guidelines__img {
