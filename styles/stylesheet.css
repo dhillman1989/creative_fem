@@ -66,7 +66,7 @@ body {
 
 .navigation {
   display: flex;
-  height: 10rem;
+  height: 178px;
   align-items: stretch;
   justify-content: space-between;
   color: var(--color-white);
@@ -90,6 +90,10 @@ body {
   font-size: 1.5rem;
   width: 5rem;
   color: var(--color-white);
+}
+
+.hamburger {
+  display: none;
 }
 
 .navigation__link--button {
@@ -432,6 +436,11 @@ object {
     font-size: 48%;
   }
 
+  . .heading--primary {
+    font-size: 5.4em;
+    line-height: 6.4rem;
+  }
+
   .navigation__list {
     width: 60%;
     justify-content: space-evenly;
@@ -469,6 +478,14 @@ object {
     padding: 2rem 3rem 2rem 5rem;
   }
 
+  .approach__list {
+    transform: translateX(-5rem) scaleX(0.6) scaleY(0.66);
+  }
+
+  .approach__list span {
+    transform: scale(8) translateX(1px) translateY(1px);
+  }
+
   .tilde,
   .brand-guidelines__title .tilde,
   .design__tilde {
@@ -490,9 +507,28 @@ object {
     font-size: 45%;
   }
 
+  .navigation {
+    display: flex;
+    height: 110px;
+    align-items: stretch;
+    justify-content: space-between;
+    color: var(--color-white);
+    align-items: center;
+    padding-right: 3rem;
+  }
+
   .main-grid {
     display: flex;
     flex-direction: column;
+  }
+
+  .logobar.pl-lg {
+    padding-left: 3rem;
+  }
+
+  .hamburger {
+    margin-left: auto;
+    display: inline-block;
   }
 
   .navigation__list {
@@ -542,7 +578,11 @@ object {
   }
 
   .approach__text > * {
-    transform: scale(1);
+    transform: scale(1) translate(-5rem);
+  }
+
+  .approach__list span {
+    transform: scale(8) translateX(3px) translateY(0px);
   }
 
   .design__text {
@@ -550,7 +590,7 @@ object {
   }
 
   .brand-guidelines__title {
-    padding-right: 5rem;
+    padding-right: 2rem;
 
     margin-top: -2px;
     order: 200;
@@ -558,6 +598,11 @@ object {
 
   .brand-guidelines__img {
     object-fit: cover;
+  }
+
+  .brand-guidelines__img .note {
+    right: 5rem;
+    bottom: 5rem;
   }
 
   .footer {
@@ -577,5 +622,10 @@ object {
   .footer__button {
     margin-left: 0;
     margin-bottom: 5rem;
+  }
+  .slideshow-controls__left,
+  .slideshow-controls__right {
+    transform-origin: 0 0;
+    transform: scale(0.6);
   }
 }
