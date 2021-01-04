@@ -529,6 +529,10 @@ object {
     background-color: var(--color-red);
   }
 
+  .navigation__link--button:hover,
+  .navigation__link--button:active {
+    background-color: var(--color-red-light);
+  }
   .navigation {
     position: relative;
     display: flex;
