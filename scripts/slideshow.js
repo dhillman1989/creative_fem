@@ -9,9 +9,9 @@ console.log("connected");
 
 let slide = 0;
 const slidesData = [
-    {slideTitle: "Brand naming & guidelines", images: "<source srcset='/assets/mobile/image-slide-1.jpg' media='(max-width: 700px)'><source srcset='/assets/tablet/image-slide-1.jpg' media='(max-width: 1100px)'><img class='image' src='/assets/desktop/image-slide-1.jpg'>", noteTitle: "Lean Product Roadmap", noteYear: "2019 Project"},
-    {slideTitle: "Brand identity & merchandise", images: "<source srcset='/assets/mobile/image-slide-2.jpg' media='(max-width: 700px)'><source srcset='/assets/tablet/image-slide-2.jpg' media='(max-width: 1100px)'><img class='image' src='/assets/desktop/image-slide-2.jpg'>", noteTitle: "New Majestic Hotel", noteYear: "2018 Project"},
-    {slideTitle: "Brand identity & web design", images: "<source srcset='/assets/mobile/image-slide-3.jpg' media='(max-width: 700px)'><source srcset='/assets/tablet/image-slide-3.jpg' media='(max-width: 1100px)'><img class='image' src='/assets/desktop/image-slide-3.jpg'>", noteTitle: "Crypto Dashboard", noteYear: "2016 Project"}
+    {slideTitle: "Brand naming & guidelines", images: "<source srcset='assets/mobile/image-slide-1.jpg' media='(max-width: 700px)'><source srcset='assets/tablet/image-slide-1.jpg' media='(max-width: 1100px)'><img class='image' src='assets/desktop/image-slide-1.jpg'>", noteTitle: "Lean Product Roadmap", noteYear: "2019 Project"},
+    {slideTitle: "Brand identity & merchandise", images: "<source srcset='assets/mobile/image-slide-2.jpg' media='(max-width: 700px)'><source srcset='assets/tablet/image-slide-2.jpg' media='(max-width: 1100px)'><img class='image' src='assets/desktop/image-slide-2.jpg'>", noteTitle: "New Majestic Hotel", noteYear: "2018 Project"},
+    {slideTitle: "Brand identity & web design", images: "<source srcset='assets/mobile/image-slide-3.jpg' media='(max-width: 700px)'><source srcset='assets/tablet/image-slide-3.jpg' media='(max-width: 1100px)'><img class='image' src='assets/desktop/image-slide-3.jpg'>", noteTitle: "Crypto Dashboard", noteYear: "2016 Project"}
 ];
 
 const changeSlide = ()=>{
@@ -20,6 +20,8 @@ const changeSlide = ()=>{
     noteTitle.innerText = slidesData[slide].noteTitle;
     noteYear.innerText = slidesData[slide].noteYear;
 }
+
+changeSlide();
 
 controlLeft.addEventListener("click", ()=> {if (slide > 0){
         slide -=1; console.log(slide);
