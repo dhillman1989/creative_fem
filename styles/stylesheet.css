@@ -500,52 +500,9 @@ object {
   }
 }
 
-@media only screen and (max-width: 675px) {
+@media only screen and (max-width: 700px) {
   html {
     font-size: 50%;
-  }
-
-  .dd-visible {
-    display: flex !important;
-    z-index: 100;
-    max-width: 60vw;
-    opacity: 1;
-    flex-direction: column;
-    position: absolute;
-    bottom: 0;
-    right: 2rem;
-    padding: 2rem;
-    background-color: var(--color-bg-black);
-    transform: translateY(100%);
-  }
-
-  .navigation__link {
-    font-size: 2rem;
-    font-weight: 400;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: auto;
-    margin: 2rem;
-    text-align: center;
-  }
-  .navigation__link--button {
-    background-color: var(--color-red);
-  }
-
-  .navigation__link--button:hover,
-  .navigation__link--button:active {
-    background-color: var(--color-red-light);
-  }
-  .navigation {
-    position: relative;
-    display: flex;
-    height: 110px;
-    align-items: stretch;
-    justify-content: space-between;
-    color: var(--color-white);
-    align-items: center;
-    padding-right: 3rem;
   }
 
   .main-grid {
@@ -555,15 +512,6 @@ object {
 
   .pl-lg {
     padding-left: 6rem;
-  }
-
-  .hamburger {
-    margin-left: auto;
-    display: inline;
-  }
-
-  .navigation__list {
-    display: none;
   }
 
   .splash {
@@ -663,5 +611,57 @@ object {
   .design__tilde,
   .tilde {
     visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .navigation__list {
+    display: none;
+  }
+  .dd-visible {
+    display: flex !important;
+    z-index: 100;
+    max-width: 60vw;
+    opacity: 1;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+    padding: 2rem;
+    background-color: var(--color-bg-black);
+    transform: translateY(100%);
+  }
+  .hamburger {
+    margin-left: auto;
+    display: inline;
+  }
+
+  .navigation__link {
+    font-size: 2rem;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: 2rem;
+    text-align: center;
+  }
+  .navigation__link--button {
+    background-color: var(--color-red);
+  }
+
+  .navigation__link--button:hover,
+  .navigation__link--button:active {
+    background-color: var(--color-red-light);
+  }
+  .navigation {
+    position: relative;
+    display: flex;
+    height: 110px;
+    align-items: stretch;
+    justify-content: space-between;
+    color: var(--color-white);
+    align-items: center;
+    padding-right: 3rem;
   }
 }
