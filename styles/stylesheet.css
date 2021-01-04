@@ -61,7 +61,7 @@ body {
 
 .heading--primary {
   font-size: 9rem;
-  line-height: 8rem;
+  line-height: 9.5rem;
 }
 
 .heading--secondary {
@@ -245,6 +245,8 @@ a.design__cta:hover {
 }
 
 .approach__list {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   list-style-type: none;
   display: flex;
   flex-direction: column;
