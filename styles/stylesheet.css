@@ -662,8 +662,5 @@ object {
   }
 }
 
-@media only screen and (min-width: 1101px) {
-  html {
-    font-size: 62%;
-  }
+
 }
