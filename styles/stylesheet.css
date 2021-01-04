@@ -17,6 +17,12 @@
   padding: 0;
 }
 
+img {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
 a:link,
 a:visited {
   text-decoration: none;
@@ -114,9 +120,6 @@ body {
 
 .splash {
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
   height: 70rem;
   background-position: top right;
   background-repeat: no-repeat;
@@ -458,10 +461,6 @@ object {
     padding-right: 8rem;
   }
 
-  .pt-lg {
-    padding-top: 15rem;
-  }
-
   .mb-md {
     margin-bottom: 2rem;
   }
@@ -522,7 +521,7 @@ object {
     flex-direction: column;
   }
 
-  .logobar.pl-lg {
+  .pl-lg {
     padding-left: 3rem;
   }
 
@@ -586,7 +585,7 @@ object {
   }
 
   .design__text {
-    padding: 8rem 8rem;
+    padding: 8rem 3rem;
   }
 
   .brand-guidelines__title {
@@ -627,5 +626,10 @@ object {
   .slideshow-controls__right {
     transform-origin: 0 0;
     transform: scale(0.6);
+  }
+
+  .design__tilde,
+  .tilde {
+    visibility: hidden;
   }
 }

@@ -36,11 +36,15 @@
       </div>
 
       <div class="splash">
-        <image
-          class="splash__bg"
-          src="./assets/desktop/image-hero.jpg"
-          srcset="./assets/tablet/image-hero.jpg 1100w, ./assets/mobile/image-hero.jpg 700w"
-        />
+        <picture>
+          <source
+            srcset="./assets/mobile/image-hero.jpg"
+            media="(max-width: 700px)" />
+          <source
+            srcset="./assets/tablet/image-hero.jpg"
+            media="(max-width: 1100px)" />
+          <image class="splash__bg" src="./assets/desktop/image-hero.jpg"
+        /></picture>
 
         <div class="splash__text pl-lg">
           <h1 class="heading heading--primary mb-md">
@@ -56,11 +60,18 @@
       </div>
 
       <div class="main-grid">
-        <img
-          src="./assets/desktop/image-strategic.jpg"
-          alt=""
-          class="design__img"
-        />
+        <picture class="design__img">
+          <source
+            srcset="./assets/mobile/image-strategic.jpg"
+            media="(max-width: 700px)" />
+          <source
+            srcset="./assets/tablet/image-strategic.jpg"
+            media="(max-width: 1100px)" />
+          <img
+            src="./assets/desktop/image-strategic.jpg"
+            alt="design photo"
+            class="design__img"
+        /></picture>
         <div class="design__text pt-lg">
           <img
             src="./assets/desktop/bg-pattern-wave-red.svg"
@@ -132,11 +143,17 @@
           </div>
         </div>
         <div class="brand-guidelines__img">
-          <img
-            id="slideshow-img"
-            src="./assets/desktop/image-slide-1.jpg"
-            class="image"
-          />
+          <picture id="slideshow-img">
+            <source
+              srcset="/assets/mobile/image-slide-1.jpg"
+              media="(max-width: 700px)"
+            />
+            <source
+              srcset="/assets/tablet/image-slide-1.jpg"
+              media="(max-width: 1100px)"
+            />
+            <img class="image" src="/assets/desktop/image-slide-1.jpg" />
+          </picture>
           <div class="note">
             <p id="note-title">Lean Product Roadmap</p>
             <p id="note-year">2019 Project</p>
