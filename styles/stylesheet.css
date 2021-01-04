@@ -438,6 +438,10 @@ object {
     font-size: 50%;
   }
 
+  .navigation {
+    height: 10rem;
+  }
+
   .heading--primary {
     font-size: 5.4em;
     line-height: 6.4rem;
@@ -657,7 +661,6 @@ object {
   .navigation {
     position: relative;
     display: flex;
-    height: 110px;
     align-items: stretch;
     justify-content: space-between;
     color: var(--color-white);
