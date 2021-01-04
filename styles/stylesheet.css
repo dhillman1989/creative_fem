@@ -180,6 +180,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   position: relative;
   grid-column: span 4;
   padding-left: 15rem;
@@ -191,6 +192,10 @@ body {
   position: absolute;
   top: 18rem;
   left: -7rem;
+}
+
+.design__text > * {
+  transform: translatey(-50%);
 }
 
 .design__text .heading--secondary {
@@ -254,7 +259,7 @@ a.design__cta:hover {
 }
 
 .approach__text > * {
-  transform: scaleX(0.6) scaleY(0.66);
+  transform: scaleX(0.6) scaleY(0.66) translatey(-5rem);
 }
 
 .approach__text p {
@@ -414,7 +419,7 @@ object {
 }
 
 .pt-lg {
-  padding-top: 10rem;
+  padding-top: 6rem;
 }
 
 .mb-md {
@@ -431,7 +436,7 @@ object {
 
 @media only screen and (max-width: 1100px) {
   html {
-    font-size: 48%;
+    font-size: 55%;
   }
 
   .heading--primary {
@@ -473,7 +478,7 @@ object {
   }
 
   .approach__list {
-    transform: translateX(-5rem) scaleX(0.6) scaleY(0.66);
+    transform: translateX(-5rem) scaleX(0.6) scaleY(0.66) translatey(-8rem);
   }
 
   .approach__list span {
@@ -613,7 +618,14 @@ object {
   }
 
   .design__text {
-    padding: 8rem 6rem;
+    padding-left: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-right: 5rem;
+  }
+
+  .design__text > * {
+    transform: translatey(0);
   }
 
   .brand-guidelines__title {
@@ -660,7 +672,4 @@ object {
   .tilde {
     visibility: hidden;
   }
-}
-
-
 }
