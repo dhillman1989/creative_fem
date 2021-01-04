@@ -500,7 +500,7 @@ object {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 675px) {
   html {
     font-size: 50%;
   }
