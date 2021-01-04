@@ -249,6 +249,7 @@ a.design__cta:hover {
 }
 
 .approach__list {
+  margin: 5rem 0;
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -259,7 +260,7 @@ a.design__cta:hover {
 }
 
 .approach__text > * {
-  transform: scaleX(0.6) scaleY(0.66) translatey(-5rem);
+  transform: scaleX(0.6) scaleY(0.66);
 }
 
 .approach__text p {
@@ -478,7 +479,7 @@ object {
   }
 
   .approach__list {
-    transform: translateX(-5rem) scaleX(0.6) scaleY(0.66) translatey(-8rem);
+    transform: translateX(-5rem) scaleX(0.6) scaleY(0.66);
   }
 
   .approach__list span {
