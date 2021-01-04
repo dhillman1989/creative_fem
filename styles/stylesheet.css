@@ -166,16 +166,14 @@ body {
 .main-grid {
   display: grid;
   grid-template-columns: repeat(8, 12.5vw);
-  grid-template-rows: repeat(12, 1fr);
+
   grid-auto-rows: auto;
 }
-
 .design__img {
   width: 100%;
   height: 100%;
   object-fit: fill;
   grid-column: span 4;
-  grid-row: span 4;
 }
 
 .design__text {
@@ -184,7 +182,6 @@ body {
   align-items: flex-start;
   position: relative;
   grid-column: span 4;
-  grid-row: span 4;
   padding-left: 15rem;
   padding-right: 10rem;
   background-color: var(--color-bg-black);
@@ -229,7 +226,6 @@ a.design__cta:hover {
 
 .approach__title-box {
   grid-column: span 4;
-  grid-row: span 4;
   z-index: 5;
   position: relative;
 }
@@ -244,7 +240,6 @@ a.design__cta:hover {
   background-color: var(--color-red);
   transform: scaleX(1.5) scaleY(1.4);
   grid-column: span 4;
-  grid-row: span 4;
   padding: 0rem 15rem 0 17rem;
 }
 
@@ -328,7 +323,7 @@ a.design__cta:hover {
 
 .brand-guidelines__img img {
   grid-column: 4 / span 5;
-  grid-row: span 4;
+
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -501,7 +496,7 @@ object {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 690px) {
   html {
     font-size: 45%;
   }
@@ -522,7 +517,7 @@ object {
   }
 
   .pl-lg {
-    padding-left: 3rem;
+    padding-left: 6rem;
   }
 
   .hamburger {
@@ -549,7 +544,7 @@ object {
   }
   .splash__text {
     width: 100%;
-    padding: 10rem 5rem;
+    padding: 5rem 6rem;
   }
 
   .splash__btn {
@@ -585,7 +580,7 @@ object {
   }
 
   .design__text {
-    padding: 8rem 3rem;
+    padding: 8rem 6rem;
   }
 
   .brand-guidelines__title {
@@ -625,11 +620,17 @@ object {
   .slideshow-controls__left,
   .slideshow-controls__right {
     transform-origin: 0 0;
-    transform: scale(0.6);
+    transform: scale(1);
   }
 
   .design__tilde,
   .tilde {
     visibility: hidden;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  html {
+    font-size: 70%;
   }
 }
